@@ -9,6 +9,7 @@ const DarkMode = () => {
     e.preventDefault();
     setDarkMode(!darkMode)
   };
+
   return (
     <div>
       <div className="dark-mode__toggle"  onClick={toggleMode}>

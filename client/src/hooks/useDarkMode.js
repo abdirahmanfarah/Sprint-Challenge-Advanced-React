@@ -9,7 +9,7 @@ export const useDarkMode = (key, initialValue) => {
     try{
 
       someValue ? document.querySelector('body').classList.add('dark-mode')
-      : document.querySelector('body').classList.removed('dark-mode')
+      : document.querySelector('body').classList.remove('dark-mode')
     }
     catch(error) {
       return setSomeValue
