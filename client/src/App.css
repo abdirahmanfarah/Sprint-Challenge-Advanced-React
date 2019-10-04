@@ -2,12 +2,12 @@
   text-align: center;
 }
 
-.App-logo {
+/* .App-logo {
   animation: App-logo-spin infinite 20s linear;
   height: 40vmin;
   pointer-events: none;
-}
-
+} */
+/* 
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -17,10 +17,44 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+} */
+.wrapper {
+  margin:auto;
+  width:100%;
 }
+.player-cards{
+ border:1px solid black;
+}
+
 
 .App-link {
   color: #61dafb;
+}
+.dark-mode__toggle {
+  background: papayawhip;
+  border-radius: 50px;
+  border: 1px solid black;
+  height: 20px;
+  position: relative;
+  width: 40px;
+}
+
+.toggle {
+  background: red;
+  border-radius: 50px;
+  height: 18px;
+  left: 0;
+  position: absolute;
+  transition: 0.2s;
+  width: 20px;
+}
+
+.toggled {
+  left: 18px;
+}
+.dark-mode {
+  color:white;
+  background-color: #313843;
 }
 
 @keyframes App-logo-spin {
