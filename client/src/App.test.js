@@ -13,3 +13,8 @@ test("World Cup Names are here", () => {
   getByText('Top Most Searched World Cup Names');
 });
 
+test("World Cup Names are here", () => {
+  const { getByText }= rtl.render(<App />);
+  getByText('Name');
+});
+
