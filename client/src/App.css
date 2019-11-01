@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  /* background:lightgoldenrodyellow; */
 }
 
 .App-logo {
@@ -30,4 +31,59 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+/* Styling begins */
+
+.Main {
+  display:flex;
+  justify-content: center;
+  flex-direction: column;
+  background:teal;
+  width:80%;
+  margin:auto;
+}
+.players {
+  display: flex;
+  border:1px solid black;
+  justify-content: center;
+  flex-direction:column;
+  width:30%;
+  background:white;
+  border-radius:10px;
+  margin:10px auto;
+  color:purple;
+}
+.player-cards {
+  display: flex;
+  flex-wrap:wrap;
+  margin:auto;
+}
+
+/* Dark Mode */
+
+.dark-mode_clicked {
+  background:green;
+  border:1px solid black;
+  width:40px;
+  height:30px;
+  border-radius:50px;
+  position:relative;
+}
+
+.notClicked {
+  background:black;
+  border-radius:20px;
+  height:30px;
+  left:0;
+  transition:0.5s;
+  width:20px;
+  position:absolute;
+}
+.clicked {
+  left:10px;
+}
+.dark-mode {
+  color:white;
+  background-color:#313843;
 }
