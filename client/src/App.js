@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import axios from 'axios';
-
+import PlayerCard from './components/Cards'
  class App extends React.Component {
   constructor() {
     super();
@@ -24,7 +24,11 @@ import axios from 'axios';
   render() {
      return (
       <div className="App">
+       <h1>World Cup Players</h1>
        
+       <div className="Main">
+        <PlayerCard data={this.state.data}/>
+       </div>
       </div>
     );
   }

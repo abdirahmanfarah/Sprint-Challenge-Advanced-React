@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  background:lightgoldenrodyellow;
 }
 
 .App-logo {
@@ -30,4 +31,29 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+/* Styling begins */
+
+.Main {
+  display:flex;
+  justify-content: center;
+  background:teal;
+  width:80%;
+  margin:auto;
+}
+.players {
+  display: flex;
+  border:1px solid black;
+  justify-content: center;
+  flex-direction:column;
+  width:30%;
+  background:white;
+  border-radius:10px;
+  margin:10px auto;
+}
+.player-cards {
+  display: flex;
+  flex-wrap:wrap;
+  margin:auto;
 }
