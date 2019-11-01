@@ -6,10 +6,10 @@ const PlayerCard = props => {
     <div className="player-cards">
     {props.data.map(player => (
 
-      <div className="players">
-        <h3 key={player.id}> {player.name} </h3>
-        <p> {player.country} </p>
-        <p> {player.searches} </p>
+      <div className="players" key={player.id}>
+        <h3> {player.name} </h3>
+        <p> Country: {player.country} </p>
+        <p> Number of Searches: {player.searches} </p>
       </div>
   ))}
 

@@ -57,3 +57,30 @@
   flex-wrap:wrap;
   margin:auto;
 }
+
+/* Dark Mode */
+
+.dark-mode_clicked {
+  background:green;
+  border:1px solid black;
+  width:40px;
+  height:30px;
+  border-radius:50px;
+  position:relative;
+}
+
+.notClicked {
+  background:black;;
+  border-radius:20px;
+  height:30px;
+  left:0px;
+  transition:0.5s;
+  width:20px;
+}
+.clicked {
+  left:10px;
+}
+.dark-mode {
+  color:red;
+  background-color:#313843;
+}

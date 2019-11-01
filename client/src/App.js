@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import axios from 'axios';
 import PlayerCard from './components/Cards'
+import DarkMode from './components/Darkmode'
  class App extends React.Component {
   constructor() {
     super();
@@ -17,19 +18,21 @@ import PlayerCard from './components/Cards'
         this.setState({
           data: res.data
         });
-        console.log(res.data) ///delete this later
       })
       .catch(err => console.log(`Error`, err))
   }
   render() {
      return (
-      <div className="App">
-       <h1>World Cup Players</h1>
-       
-       <div className="Main">
-        <PlayerCard data={this.state.data}/>
-       </div>
-      </div>
+     <div className = 'body'>
+        <div className="App">
+         <h1>World Cup Players</h1>
+         <DarkMode />
+         <div className="Main">
+           <h2>From Most-Searched to Least Searched</h2>
+          <PlayerCard data={this.state.data}/>
+         </div>
+        </div>
+     </div>
     );
   }
 }
