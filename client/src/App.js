@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import axios from 'axios';
 import Card from './components/PlayerCards'
+import DarkMode from './components/useDarkmode'
 
 class App extends React.Component {
   constructor() {
@@ -28,6 +29,7 @@ class App extends React.Component {
       <div className = 'container'>
         <div className='wrapper'>
           <h1>Athletes</h1>
+          <DarkMode />
           <div className="container-body">
             <h2> List of Athletes</h2>
             <Card data={this.state.data} />
